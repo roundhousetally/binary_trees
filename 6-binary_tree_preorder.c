@@ -1,8 +1,9 @@
 #include "binary_trees.h"
 
 /**
- *binary_tree_preorder- preorder traversal
+ *binary_tree_preorder - preorder traversal
  *@tree: the tree to traverse
+ *@func: void pointer to function
  *Return: void
  */
 

@@ -3,6 +3,7 @@
 /**
  *binary_tree_inorder- inorder traversal
  *@tree: the tree to traverse
+ *@func: void pointer to func
  *Return: void
  */
 
