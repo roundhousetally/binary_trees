@@ -25,16 +25,19 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
-        binary_tree_t *temp = node->parent;
+	binary_tree_t *temp = node->parent;
 
-        if (node == NULL || node->parent == NULL)
-                return (NULL);
+	if (node == NULL || node->parent == NULL)
+		return (NULL);
 
-        if (temp->left == node)
-                temp = temp->right;
+	if (temp->left == node)
+		temp = temp->right;
 
-        else if (temp->right == node)
-                temp = temp->left;
+	else if (temp->right == node)
+		temp = temp->left;
 
-        return (temp);
+	else if (temp->right == NULL || temp->left == NULL)
+		return (NULL);
+
+	return (temp);
 }
